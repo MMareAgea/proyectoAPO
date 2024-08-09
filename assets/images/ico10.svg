@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57">
+  <g id="Grupo_76" data-name="Grupo 76" transform="translate(-554.5 -413)">
+    <path id="Icon_awesome-user" data-name="Icon awesome-user" d="M9.433,10.78a5.39,5.39,0,1,0-5.39-5.39A5.39,5.39,0,0,0,9.433,10.78Zm3.773,1.348h-.7a7.33,7.33,0,0,1-6.14,0h-.7A5.661,5.661,0,0,0,0,17.787v1.752A2.022,2.022,0,0,0,2.021,21.56H16.844a2.022,2.022,0,0,0,2.021-2.021V17.787A5.661,5.661,0,0,0,13.206,12.128Z" transform="translate(573.576 429.819)" fill="#fff"/>
+    <g id="Elipse_76" data-name="Elipse 76" transform="translate(560 418)" fill="none" stroke="#0a5569" stroke-width="3">
+      <circle cx="23" cy="23" r="23" stroke="none"/>
+      <circle cx="23" cy="23" r="21.5" fill="none"/>
+    </g>
+    <rect id="Rectángulo_21" data-name="Rectángulo 21" width="4" height="13" transform="translate(581 413)" fill="#0a5569"/>
+    <rect id="Rectángulo_24" data-name="Rectángulo 24" width="4" height="13" transform="translate(611.5 439.5) rotate(90)" fill="#0a5569"/>
+    <rect id="Rectángulo_22" data-name="Rectángulo 22" width="4" height="13" transform="translate(581 457)" fill="#0a5569"/>
+    <rect id="Rectángulo_23" data-name="Rectángulo 23" width="4" height="13" transform="translate(567.5 439.5) rotate(90)" fill="#0a5569"/>
+  </g>
+</svg>

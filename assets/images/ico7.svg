@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="50.308" viewBox="0 0 74 50.308">
+  <g id="Grupo_138" data-name="Grupo 138" transform="translate(-980 -679.445)">
+    <path id="Icon_awesome-user" data-name="Icon awesome-user" d="M22.01,25.154A12.577,12.577,0,1,0,9.433,12.577,12.576,12.576,0,0,0,22.01,25.154Zm8.8,3.144H29.173a17.1,17.1,0,0,1-14.326,0H13.206A13.209,13.209,0,0,0,0,41.5v4.088a4.718,4.718,0,0,0,4.716,4.716H39.3a4.718,4.718,0,0,0,4.716-4.716V41.5A13.209,13.209,0,0,0,30.814,28.3Z" transform="translate(980 679.445)" fill="#0a5569"/>
+    <path id="Icon_material-access-time" data-name="Icon material-access-time" d="M17.985,3A15,15,0,1,0,33,18,14.993,14.993,0,0,0,17.985,3ZM18,30A12,12,0,1,1,30,18,12,12,0,0,1,18,30Zm.75-19.5H16.5v9l7.875,4.725L25.5,22.38l-6.75-4.005Z" transform="translate(1021 677)" fill="#fff"/>
+  </g>
+</svg>

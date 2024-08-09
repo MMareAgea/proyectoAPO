@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45.308" height="50.555" viewBox="0 0 45.308 50.555">
+  <g id="Grupo_140" data-name="Grupo 140" transform="translate(-145.5 -413.445)">
+    <g id="Icon_ionic-md-man" data-name="Icon ionic-md-man" transform="translate(159.757 411.195)">
+      <path id="Trazado_1800" data-name="Trazado 1800" d="M19.586,10.668a4.209,4.209,0,1,0-4.209-4.209A4.195,4.195,0,0,0,19.586,10.668Z" transform="translate(1.986)" fill="#fff"/>
+      <path id="Trazado_1801" data-name="Trazado 1801" d="M25.792,8.086h-8.44a5.4,5.4,0,0,0-5.258,5.461V26.366a1.752,1.752,0,1,0,3.5,0V14.518h.677V46.745a2.428,2.428,0,1,0,4.852,0V28.171h.9V46.756a2.428,2.428,0,1,0,4.852-.011V14.518h.564V26.366a1.806,1.806,0,1,0,3.611,0V13.547A5.417,5.417,0,0,0,25.792,8.086Z" transform="translate(0 3.53)" fill="#fff"/>
+    </g>
+    <g id="Icon_ionic-md-woman" data-name="Icon ionic-md-woman" transform="translate(134.246 411.202)">
+      <path id="Trazado_1802" data-name="Trazado 1802" d="M14.676,11.875,11.36,23.635c-.71,2.571,2.334,3.574,3.078,1.161L17.4,13.949h.834l-5.1,19.056H17.9v14.32a1.809,1.809,0,1,0,3.608,0V33.005h1.128v14.32a1.758,1.758,0,1,0,3.5,0V33.005h4.894L25.816,13.949h.947L29.729,24.8c.733,2.469,3.755,1.409,3.078-1.15L29.492,11.875a5.6,5.6,0,0,0-4.736-3.789H19.423A5.383,5.383,0,0,0,14.676,11.875Z" transform="translate(0 3.527)" fill="#fff"/>
+      <path id="Trazado_1803" data-name="Trazado 1803" d="M23.68,6.449a4.128,4.128,0,1,0-8.254,0,4.128,4.128,0,1,0,8.254,0Z" transform="translate(2.519)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,247 @@
+@media screen and (min-width: 1280px) {
+    .only-desktop {
+        display:block
+    }
+
+    .only-mobile {
+        display: none
+    }
+
+    h1 {
+        font-size: 60px;
+        line-height: 48px;
+        font-weight: 700
+    }
+
+    h2 {
+        font-size: 44px;
+        line-height: 50px;
+        font-weight: 700
+    }
+
+    h3 {
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: 700;
+        color: #5eeff7
+    }
+
+    .section {
+        width: 100%
+    }
+
+    .section .content {
+        padding: 80px 40px
+    }
+
+    .section2 .content .txt {
+        font-size: 38px;
+        line-height: 45px;
+        max-width: 700px
+    }
+
+    .section4 .content {
+        text-align: center
+    }
+
+    .section4 .content h2 {
+        padding-bottom: 130px
+    }
+
+    .section4 .content .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 75%;
+        margin: 0 auto
+    }
+
+    .section4 .content .list .item {
+        width: calc(33.33% - 20px);
+        flex-direction: column;
+        border-bottom: 0;
+        margin-bottom: 80px
+    }
+
+    .section4 .content .list .item .foto {
+        width: 90px;
+        height: 90px;
+        font-size: 34px;
+        line-height: 90px;
+        margin-bottom: 10px
+    }
+
+    .section4 .content .list .item .txts {
+        width: 100%
+    }
+
+    .section4 .content .list .item .txts .nombre {
+        font-size: 22px
+    }
+
+    .section5 .content .bloques {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
+    .section5 .content .bloques .col {
+        width: calc(50% - 20px)
+    }
+
+    .section5 .content .bloques .bloque1 {
+        padding-top: 26px;
+        padding-bottom: 36px;
+        justify-content: space-between
+    }
+
+    .section5 .content .bloques .bloque1 .innercol1 {
+        width: calc(100% - 140px)
+    }
+
+    .section5 .content .bloques .bloque1 .innercol1 h3 {
+        font-size: 24px
+    }
+
+    .section5 .content .bloques .bloque1 .innercol2 {
+        width: 140px;
+        text-align: center;
+        text-align: center;
+        display: flex
+    }
+
+    .section5 .content .bloques .bloque1 .innercol2 img {
+        width: 80px
+    }
+
+    .section5 .content .bloques .bloque1 .txt {
+        font-size: 44px;
+        margin-top: 10px
+    }
+
+    .section5 .content .bloques .dosbloques .bloque2 {
+        padding: 36px 20px 20px
+    }
+
+    .section5 .content .bloques .dosbloques .bloque2 .logo img {
+        height: 46px
+    }
+
+    .section6 h2 {
+        padding-bottom: 130px
+    }
+
+    .section6 .item {
+        display: flex;
+        justify-content: space-between
+    }
+
+    .section6 .item .col {
+        width: calc(50% - 20px)
+    }
+
+    .section8 .content .txts,.section8 .content h4 {
+        max-width: 75%;
+        margin: 0 auto
+    }
+
+    .section9 .content p {
+        max-width: 75%;
+        margin: 0 auto;
+        padding-bottom: 40px
+    }
+
+    .section11 .content .lista,.section11 .content h3 {
+        max-width: 75%;
+        margin: 0 auto
+    }
+
+    .section11 .content .lista ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap
+    }
+
+    .section11 .content .lista ul li {
+        width: calc(50% - 10px)
+    }
+
+    .section14 .content h2 {
+        padding-bottom: 50px
+    }
+
+    .section14 .content .tresitems {
+        display: flex;
+        justify-content: space-between;
+        max-width: 80%;
+        margin: 0 auto
+    }
+
+    .section14 .content .tresitems .item {
+        width: calc(33.33% - 40px);
+        text-align: left
+    }
+
+    .section14 .content .tresitems .item .txt {
+        max-width: 90%
+    }
+
+    .section15 .content {
+        padding-bottom: 0 !important
+    }
+
+    .section15 .content h2 {
+        padding-bottom: 100px
+    }
+
+    .section15 .content .bloquemixto {
+        display: flex;
+        justify-content: space-between
+    }
+
+    .section15 .content .bloquemixto .imagen {
+        width: 48%
+    }
+
+    .section15 .content .bloquemixto .txt {
+        width: 48%
+    }
+
+    .section15 .content .bloquemixto .txt ul li {
+        margin-bottom: 5px
+    }
+
+    .section16 .content .bloque {
+        padding-top: 60px
+    }
+
+    .section16 .content .bloque .txt {
+        padding-bottom: 80px;
+        padding-top: 20px;
+        font-size: 22px
+    }
+
+    .section16 .content .bloque .lista {
+        max-width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
+    .section16 .content .bloque .lista .item {
+        width: calc(50% - 20px);
+        padding-bottom: 40px;
+        margin-bottom: 40px
+    }
+
+    .section16 .content .bloque .lista .item .ico {
+        text-align: left
+    }
+
+    .section16 .content .bloque .lista .item .desc {
+        text-align: left;
+        font-size: 18px;
+        line-height: 26px
+    }
+}

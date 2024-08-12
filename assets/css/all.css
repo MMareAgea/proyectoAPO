@@ -235,11 +235,6 @@ main {
   justify-content: center
 }
 
-.portada .copete {
-  padding-top: 35px;
-  font-size: 18px;
-}
-
 .portada .content .flecha {
   width: 70px;
   height: 100px;
@@ -322,7 +317,6 @@ main {
   text-align: center;
   padding: 10px;
   background: #2daec1;
-  background: linear-gradient(0deg, #2daec1 0%, #6de5eb 100%);
   border-radius: 8px; 
   height: 200px; 
   display: flex; 
@@ -506,34 +500,32 @@ main {
 .section6 .item {
   padding-bottom: 40px;
   margin-bottom: 40px;
-  border-bottom: 1px solid rgba(94,239,247,0.25);
+  border-bottom: 1px solid rgba(94,239,247,0.25)
 }
 
 .section6 .item:last-of-type {
   border-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 0
 }
 
 .section6 .item .col {
-  width: 100%;
+  width: 100%
 }
 
 .section6 .item .txt {
   font-size: 18px;
-  line-height: 28px;
+  line-height: 28px
 }
 
 .section6 .item .bloque {
-  height: 160px;
+  height: 180px;
   background-color: #25A7BA;
   border-radius: 20px;
-  padding: 20px;
-  width: 450px; 
-  margin-bottom: 10px;
+  padding: 20px
 }
 
 .section6 .item .bloque h4 {
-  color: #091934;
+  color: #091934
 }
 
 .section6 .item .bloque p {
@@ -542,12 +534,13 @@ main {
   background-size: 15px;
   background-position-x: 10px;
   background-position-y: center;
-  padding-left: 35px;
+  padding-left: 35px
 }
 
 .section6 .item.noflex {
-  flex-direction: column;
+  flex-direction: column
 }
+
 .section8 .content .txts {
   color: #091934
 }

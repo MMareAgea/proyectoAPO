@@ -84,8 +84,6 @@
         font-size: 22px
     }
 
-
-
     .section6 h2 {
         padding-bottom: 130px
     }
@@ -256,13 +254,14 @@
           }
         
           .etapa .icono img {
-            width: 50px; 
+            width: 80px; 
             height: 80px;
           }
         
           .etapa .nombre {
             font-size: 18px; 
           }
+
           .section6 .item {
             display: flex;
             flex-direction: column;
@@ -289,12 +288,12 @@
           }
         
           .section6 .item .col:last-child {
-            order: 1; /* Mueve el bloque celeste justo debajo del título */
-            margin-bottom: 20px; /* Añade espacio entre el bloque celeste y la descripción */
+            order: 1; 
+            margin-bottom: 20px; 
           }
         
           h2 {
-            margin-bottom: 10px; /* Reduce el espacio debajo del título */
+            margin-bottom: 10px; 
           }
     }
         

@@ -27,6 +27,7 @@ a {
 
 p {
   margin: 0 0 20px
+  
 }
 
 li {
@@ -303,60 +304,42 @@ main {
   height: auto
 }
 
-.section4 .content {
-  border-radius: 30px;
-  background: #61d5db;
-  background: linear-gradient(0deg, rgba(97,213,219,0) 0%, rgba(97,213,219,0.16) 100%);
-  text-align: left;
-  padding: 80px 40px
+.etapas {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  gap: 20px; 
 }
 
-.section4 .content .list {
-  width: 100%
-}
-
-.section4 .content .list .item {
-  width: 100%;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid rgba(94,239,247,0.25);
-  display: flex;
-  justify-content: space-between;
-  align-items: center
-}
-
-.section4 .content .list .item .foto {
-  width: 60px;
-  height: 60px;
+.etapa {
+  flex: 1 1 calc(25% - 20px); 
+  box-sizing: border-box; 
+  text-align: center;
+  padding: 10px;
   background: #2daec1;
   background: linear-gradient(0deg, #2daec1 0%, #6de5eb 100%);
-  border-radius: 100%;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 60px;
-  text-align: center
+  border-radius: 8px; 
+  height: 200px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
 }
 
-.section4 .content .list .item .txts {
-  width: calc(100% - 80px)
+.etapa .icono img {
+  width: 100px; 
+  height: 100px;
+  margin-bottom: 10px; 
+}
+
+.etapa .nombre {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .section4 .content .list .item .nombre {
   font-weight: 600;
   padding-bottom: 2px
-}
-
-.section4 .content .list .item .mail {
-  color: #5eeff7;
-  font-size: 16px
-}
-
-.section4 .content .list .item .mail a {
-  color: inherit
-}
-
-.section4 .content .list .item .mail a:hover {
-  text-decoration: underline
 }
 
 .section5 {
@@ -381,7 +364,9 @@ main {
 }
 
 .section5 .bloques .bloque.bloque-azul {
-  background-color: #091934
+  background-color: #091934;
+  width: 100%;
+  text-align: center;
 }
 
 .section5 .bloques .bloque.bloque-celeste {
@@ -509,17 +494,8 @@ main {
 .section5 .bloques .bloque5 .listadoble {
   display: flex;
   align-items: center;
-  justify-content: space-between
-}
-
-.section5 .bloques .bloque5 .listadoble div {
-  width: calc(50% - 10px);
-  background-image: url("../images/check.svg");
-  background-repeat: no-repeat;
-  background-size: 15px;
-  background-position-x: 10px;
-  background-position-y: center;
-  padding-left: 35px
+  text-align: center;
+  justify-content: center;
 }
 
 .section6 .item {

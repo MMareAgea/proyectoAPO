@@ -207,6 +207,12 @@
      
 
      @media screen and (max-width: 768px) {
+        .portada .copete {
+            font-size: 12px;
+            line-height: 1;
+            padding-top: 15px;
+        }
+
         .dropdown-content {
             width: 100%; 
             overflow-x: auto; 

@@ -215,7 +215,6 @@ main {
   overflow: hidden;
 }
 
-
 .portada .video:after {
   content: "";
   width: 100%;
@@ -234,6 +233,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center
+}
+
+.portada .copete {
+  padding-top: 35px;
+  font-size: 18px;
 }
 
 .portada .content .flecha {

@@ -25,6 +25,7 @@
         font-weight: 700;
         color: #5eeff7
     }
+    
 
     .section {
         width: 100%
@@ -75,6 +76,8 @@
         line-height: 90px;
         margin-bottom: 10px
     }
+
+    
 
     .section4 .content .list .item .txts {
         width: 100%
@@ -268,7 +271,7 @@
             align-items: stretch;
             padding-bottom: 20px;
             margin-bottom: 20px;
-            width: 800px;
+            width: 750px;
           }
         
           .section6 .item .bloque {

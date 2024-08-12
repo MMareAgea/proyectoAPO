@@ -256,14 +256,48 @@
           }
         
           .etapa .icono img {
-            width: 80px; 
+            width: 50px; 
             height: 80px;
           }
         
           .etapa .nombre {
             font-size: 18px; 
           }
-        }
+          .section6 .item {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            width: 800px;
+          }
+        
+          .section6 .item .bloque {
+            width: 350px; 
+            margin-top: -80px; 
+            height: 150px; 
+            padding: 15px; 
+          }
+        
+          .section6 .item .bloque h4 {
+            margin-bottom: 10px;
+          }
+        
+          .section6 .item .col:first-child {
+            order: 2; 
+
+          }
+        
+          .section6 .item .col:last-child {
+            order: 1; /* Mueve el bloque celeste justo debajo del título */
+            margin-bottom: 20px; /* Añade espacio entre el bloque celeste y la descripción */
+          }
+        
+          h2 {
+            margin-bottom: 10px; /* Reduce el espacio debajo del título */
+          }
+    }
+        
     
 
     

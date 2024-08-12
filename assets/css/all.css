@@ -296,12 +296,12 @@ main {
 .section2 .content .image {
   width: 100%;
   max-width: 800px;
-  text-align: center
+  text-align: center;
 }
 
 .section2 .content .image img {
   width: 100%;
-  height: auto
+  height: auto;
 }
 
 .etapas {
@@ -325,6 +325,7 @@ main {
   flex-direction: column; 
   justify-content: center; 
 }
+
 
 .etapa .icono img {
   width: 100px; 

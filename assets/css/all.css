@@ -506,32 +506,34 @@ main {
 .section6 .item {
   padding-bottom: 40px;
   margin-bottom: 40px;
-  border-bottom: 1px solid rgba(94,239,247,0.25)
+  border-bottom: 1px solid rgba(94,239,247,0.25);
 }
 
 .section6 .item:last-of-type {
   border-bottom: 0;
-  padding-bottom: 0
+  padding-bottom: 0;
 }
 
 .section6 .item .col {
-  width: 100%
+  width: 100%;
 }
 
 .section6 .item .txt {
   font-size: 18px;
-  line-height: 28px
+  line-height: 28px;
 }
 
 .section6 .item .bloque {
-  height: 180px;
+  height: 160px;
   background-color: #25A7BA;
   border-radius: 20px;
-  padding: 20px
+  padding: 20px;
+  width: 450px; 
+  margin-bottom: 10px;
 }
 
 .section6 .item .bloque h4 {
-  color: #091934
+  color: #091934;
 }
 
 .section6 .item .bloque p {
@@ -540,13 +542,12 @@ main {
   background-size: 15px;
   background-position-x: 10px;
   background-position-y: center;
-  padding-left: 35px
+  padding-left: 35px;
 }
 
 .section6 .item.noflex {
-  flex-direction: column
+  flex-direction: column;
 }
-
 .section8 .content .txts {
   color: #091934
 }

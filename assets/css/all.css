@@ -734,33 +734,41 @@ button a {
   position: relative;
   background-color: #f9f9f9;
   margin: 0 auto;
-  width: 90%; 
-  max-width: 100%; 
+  padding: 10px; /* Relleno interno */
+  width: 90%;
+  max-width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 5px;
   margin-top: 10px;
   overflow-x: auto;
+  font-family: Arial, sans-serif; /* Asegura una fuente consistente */
 }
 
 .dropdown-content table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: auto; /* Cambiado a 'auto' para permitir ajustes dinámicos */
 }
 
 .dropdown-content th, .dropdown-content td {
   padding: 12px 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
+  font-size: 14px; /* Asegura un tamaño de fuente uniforme */
+  font-weight: normal; /* Evita variaciones de grosor en el texto */
+  color: #091934; /* Color del texto en las celdas */
 }
 
 .dropdown-content th {
   background-color: #091934; 
-  color: #ffffff; 
+  color: #ffffff;
+  font-weight: bold; /* Resalta los encabezados */
+  font-size: 15px; /* Un poco más grande para diferenciar los encabezados */
 }
 
 .dropdown-content tr {
-  background-color: #ffffff; 
+  background-color: #ffffff;
   color: #091934;
 }
 
@@ -772,3 +780,11 @@ button a {
   display: block;
 }
 
+/* Ajuste específico para aumentar el espacio entre columnas */
+.dropdown-content th:nth-child(2), .dropdown-content td:nth-child(2) {
+  padding-right: 20px; /* Añadir espacio adicional a la derecha */
+}
+
+.dropdown-content th:nth-child(3), .dropdown-content td:nth-child(3) {
+  padding-left: 20px; /* Añadir espacio adicional a la izquierda */
+}

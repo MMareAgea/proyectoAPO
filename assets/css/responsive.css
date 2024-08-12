@@ -25,6 +25,7 @@
         font-weight: 700;
         color: #5eeff7
     }
+    
 
     .section {
         width: 100%
@@ -75,6 +76,8 @@
         line-height: 90px;
         margin-bottom: 10px
     }
+
+    
 
     .section4 .content .list .item .txts {
         width: 100%
@@ -289,12 +292,12 @@
           }
         
           .section6 .item .col:last-child {
-            order: 1; /* Mueve el bloque celeste justo debajo del título */
-            margin-bottom: 20px; /* Añade espacio entre el bloque celeste y la descripción */
+            order: 1; 
+            margin-bottom: 20px; 
           }
         
           h2 {
-            margin-bottom: 10px; /* Reduce el espacio debajo del título */
+            margin-bottom: 10px; 
           }
     }
         

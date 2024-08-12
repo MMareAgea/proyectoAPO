@@ -40,6 +40,11 @@
         max-width: 700px
     }
 
+    .etapa {
+        flex: 1 1 calc(25% - 20px); 
+      }
+    }
+
     .section4 .content {
         text-align: center
     }
@@ -79,53 +84,7 @@
         font-size: 22px
     }
 
-    .section5 .content .bloques {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between
-    }
 
-    .section5 .content .bloques .col {
-        width: calc(50% - 20px)
-    }
-
-    .section5 .content .bloques .bloque1 {
-        padding-top: 26px;
-        padding-bottom: 36px;
-        justify-content: space-between
-    }
-
-    .section5 .content .bloques .bloque1 .innercol1 {
-        width: calc(100% - 140px)
-    }
-
-    .section5 .content .bloques .bloque1 .innercol1 h3 {
-        font-size: 24px
-    }
-
-    .section5 .content .bloques .bloque1 .innercol2 {
-        width: 140px;
-        text-align: center;
-        text-align: center;
-        display: flex
-    }
-
-    .section5 .content .bloques .bloque1 .innercol2 img {
-        width: 80px
-    }
-
-    .section5 .content .bloques .bloque1 .txt {
-        font-size: 44px;
-        margin-top: 10px
-    }
-
-    .section5 .content .bloques .dosbloques .bloque2 {
-        padding: 36px 20px 20px
-    }
-
-    .section5 .content .bloques .dosbloques .bloque2 .logo img {
-        height: 46px
-    }
 
     .section6 h2 {
         padding-bottom: 130px
@@ -245,7 +204,7 @@
         line-height: 26px
     }
     
-     }
+     
 
      @media screen and (max-width: 768px) {
         .dropdown-content {
@@ -278,7 +237,28 @@
         .dropdown-content tr:hover {
             background-color: #ddd; 
         }
-    }
+
+        .etapas {
+            flex-direction: column;
+            align-items: stretch;
+          }
+        
+          .etapa {
+            flex: 1 1 auto;
+            margin-bottom: 20px; 
+            height: auto; 
+          }
+        
+          .etapa .icono img {
+            width: 80px; 
+            height: 80px;
+          }
+        
+          .etapa .nombre {
+            font-size: 18px; 
+          }
+        }
+    
 
     
   

@@ -215,6 +215,18 @@ main {
   overflow: hidden;
 }
 
+.portada .video .fullscreen-video {
+  min-width: 100% !important;
+  min-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  max-height: unset !important
+}
+
 .portada .video:after {
   content: "";
   width: 100%;
@@ -243,13 +255,13 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  bottom: 40px
+  bottom: 40px;
 }
 
 .portada .content .flecha a {
   display: block;
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 .portada .content .txt {
@@ -289,7 +301,7 @@ main {
   line-height: 38px;
   color: #5eeff7;
   max-width: 600px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .section2 .content .image {
@@ -301,6 +313,10 @@ main {
 .section2 .content .image img {
   width: 100%;
   height: auto;
+}
+
+.section4 .content {
+  text-align: center;
 }
 
 .etapas {
@@ -316,7 +332,7 @@ main {
   box-sizing: border-box; 
   text-align: center;
   padding: 10px;
-  background: #2daec1;
+  background-color: #25A7BA;
   border-radius: 8px; 
   height: 200px; 
   display: flex; 
@@ -418,12 +434,12 @@ main {
 
 .section5 .bloques .dosbloques .bloque2 .logo {
   width: 100%;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .section5 .bloques .dosbloques .bloque2 .logo img {
   height: 36px;
-  width: auto
+  width: auto;
 }
 
 .section5 .bloques .dosbloques .bloque2 .cajas {

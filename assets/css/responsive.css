@@ -172,98 +172,117 @@
 
 }
 
-     @media screen and (max-width: 768px) {
-        .portada .copete {
-            font-size: 12px;
-            line-height: 1;
-            padding-top: 100px;
-        }
-
-        .dropdown-content {
-            width: 100%; 
-            overflow-x: auto; 
-        }
-    
-        .dropdown-content table {
-            width: 100%; 
-            table-layout: auto; 
-            border-collapse: collapse; 
-        }
-    
-        .dropdown-content th, .dropdown-content td {
-            font-size: 14px; 
-            padding: 4px; 
-            text-align: left; 
-            white-space: nowrap; 
-        }
-    
-        .dropdown-content th {
-            background-color: #091934; 
-            color: #ffffff; 
-        }
-    
-        .dropdown-content tr:nth-child(even) {
-            background-color: #f2f2f2; 
-        }
-    
-        .dropdown-content tr:hover {
-            background-color: #ddd; 
-        }
-
-        .etapas {
-            flex-direction: column;
-            align-items: stretch;
-          }
-        
-          .etapa {
-            flex: 1 1 auto;
-            margin-bottom: 20px; 
-            height: auto; 
-          }
-        
-          .etapa .icono img {
-            width: 80px; 
-            height: 80px;
-          }
-        
-          .etapa .nombre {
-            font-size: 18px; 
-          }
-
-          .section6 .item {
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-            width: 750px;
-          }
-        
-          .section6 .item .bloque {
-            width: 350px; 
-            margin-top: -80px; 
-            height: 150px; 
-            padding: 15px; 
-          }
-        
-          .section6 .item .bloque h4 {
-            margin-bottom: 10px;
-          }
-        
-          .section6 .item .col:first-child {
-            order: 2; 
-
-          }
-        
-          .section6 .item .col:last-child {
-            order: 1; 
-            margin-bottom: 20px; 
-          }
-        
-          h2 {
-            margin-bottom: 10px; 
-          }
+@media screen and (max-width: 768px) {
+    .portada .copete {
+        font-size: 12px;
+        line-height: 1;
+        padding-top: 100px;
     }
+
+    .table-container {
+        width: 100%;
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    }
+
+    .table-container table {
+        width: 100%;
+        table-layout: fixed; /* Asegura que las columnas tengan un ancho fijo */
+        border-collapse: collapse;
+    }
+
+    .table-container th, .table-container td {
+        font-size: 12px;
+        padding: 6px;
+        text-align: left;
+    }
+
+    .table-container th {
+        background-color: #091934;
+        color: #ffffff;
+    }
+
+    .table-container tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .table-container tr:hover {
+        background-color: #ddd;
+    }
+
+    /* Mantener la primera, tercera y cuarta columnas completas */
+    .table-container th:nth-child(1), .table-container td:nth-child(1),
+    .table-container th:nth-child(3), .table-container td:nth-child(3),
+    .table-container th:nth-child(4), .table-container td:nth-child(4) {
+        max-width: none; 
+        white-space: normal; 
+        overflow: visible; 
+        width: 109px;
+    }
+
+    
+    .table-container th:nth-child(2), .table-container td:nth-child(2) {
+        max-width: 150px; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+    }
+
+    .etapas {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .etapa {
+        flex: 1 1 auto;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .etapa .icono img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .etapa .nombre {
+        font-size: 16px;
+    }
+
+    .section6 .item {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .section6 .item .bloque {
+        width: 100%;
+        margin-top: -60px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .section6 .item .bloque h4 {
+        margin-bottom: 10px;
+    }
+
+    .section6 .item .col:first-child {
+        order: 2;
+    }
+
+    .section6 .item .col:last-child {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+}
+
+
         
     
 

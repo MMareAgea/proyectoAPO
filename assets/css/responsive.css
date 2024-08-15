@@ -44,45 +44,6 @@
         flex: 1 1 calc(25% - 20px); 
     }
 
-    .section4 .content {
-        text-align: center
-    }
-
-    .section4 .content h2 {
-        padding-bottom: 130px
-    }
-
-    .section4 .content .list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        max-width: 75%;
-        margin: 0 auto
-    }
-
-    .section4 .content .list .item {
-        width: calc(33.33% - 20px);
-        flex-direction: column;
-        border-bottom: 0;
-        margin-bottom: 80px
-    }
-
-    .section4 .content .list .item .foto {
-        width: 90px;
-        height: 90px;
-        font-size: 34px;
-        line-height: 90px;
-        margin-bottom: 10px
-    }
-
-    .section4 .content .list .item .txts {
-        width: 100%
-    }
-
-    .section4 .content .list .item .txts .nombre {
-        font-size: 22px
-    }
-
     .section5 .content .bloques {
         display: flex;
         flex-wrap: wrap;
@@ -236,9 +197,9 @@
     }
 
     .etapa {
-        flex: 1 1 auto;
-        margin-bottom: 20px;
         height: auto;
+        padding: 10px;
+        width: 100%;
     }
 
     .etapa .icono img {
@@ -279,7 +240,7 @@
         margin-bottom: 20px;
     }
 
-    h2 {
+    .section6 h2 {
         margin-bottom: 10px;
         font-size: 20px;
     }

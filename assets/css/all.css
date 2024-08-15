@@ -321,40 +321,37 @@ main {
 
 .etapas {
   display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-  flex-wrap: wrap; 
-  gap: 20px; 
+  flex-wrap: wrap;
+  gap: 25px; 
+  width: 100%;
 }
 
 .etapa {
-  flex: 1 1 calc(25% - 20px); 
   box-sizing: border-box; 
   text-align: center;
-  padding: 10px;
   background-color: #25A7BA;
   border-radius: 8px; 
-  height: 200px; 
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
+  align-items: center;
+  height: 25%;
+  width: 20%;
 }
 
+.etapa a {
+  width: 100%;
+}
 
 .etapa .icono img {
   width: 100px; 
   height: 100px;
-  margin-bottom: 10px;
 }
 
-.etapa .nombre {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.section4 .content .list .item .nombre {
-  font-weight: 600;
-  padding-bottom: 2px
+.descrip-etapa {
+  margin-top: 20px;
+  text-align: start;
+  width: 70%;
 }
 
 .section5 {
@@ -590,10 +587,6 @@ main {
   margin: 0 auto;
   max-width: 100%; 
 }
-
-
-
-
 
 .section11 .content .lista ul li {
   border-bottom: 1px solid rgba(37,167,186,0.5);

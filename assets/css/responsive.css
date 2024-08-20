@@ -177,14 +177,14 @@
 
     .table-container {
         width: 100%;
-        overflow-x: hidden; /* Evita el desplazamiento horizontal */
-        padding: 0; /* Elimina cualquier padding adicional */
-        margin: 0; /* Elimina cualquier margen adicional */
+        overflow-x: hidden; 
+        padding: 0; 
+        margin: 0; 
     }
 
     .table-container table {
-        width: 100%; /* Ocupa el 100% del ancho del contenedor */
-        table-layout: fixed; /* Asegura que las columnas tengan un ancho fijo */
+        width: 100%; 
+        table-layout: fixed; 
         border-collapse: collapse;
     }
 
@@ -281,7 +281,6 @@
     }
     .iframe-container {
         width: 100%;
-        
     }
 
     .pantallas {

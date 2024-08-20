@@ -276,11 +276,16 @@
     }
 
     .section6 h2 {
-        margin-bottom: 10px;
+        margin-bottom: 40px;
         font-size: 20px;
     }
+
     .iframe-container {
         width: 100%;
+    }
+
+    .section6 .iframe-table {
+        display: none;
     }
 
     .pantallas {

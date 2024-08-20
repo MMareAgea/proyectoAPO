@@ -322,7 +322,7 @@ main {
 .etapas {
   display: flex; 
   flex-wrap: wrap;
-  gap: 25px; 
+  gap: 15px; 
   width: 100%;
 }
 
@@ -345,17 +345,19 @@ main {
 .etapa .icono img {
   width: 100px; 
   height: 100px;
+  margin-bottom: 0;
 }
 
 .descrip-etapa {
-  margin-top: 20px;
   text-align: center;
   width: 100%;
   text-align: justify;
+  margin-bottom: 30px;
 }
 
 .descrip-etapa h3 {
   font-size: 20px;
+  margin: 0;
 }
 
 .section5 {
@@ -517,14 +519,15 @@ main {
 .section6 .content {
   text-align: center;
   width: 100%;
+  
 }
 
 .section6 h2 {
-  margin-bottom: 20px; 
+  margin-bottom: 15px; 
 }
 
 .section6 .text-content {
-  margin-top: 60px; 
+  margin-top: 20px; 
   margin-bottom: 5px; 
   font-size: 18px;
   line-height: 28px;
@@ -535,16 +538,14 @@ main {
   width: 100%;
 }
 
-.section6 .styled-link {
-  color: #25A7BA; 
+.section6 .anunciantes {
+  width: auto;
   font-size: 18px;
-  line-height: 28px;
-  background-repeat: no-repeat;
-  background-size: 15px;
-  padding-left: 0; 
-  display: inline-block; 
   margin-top: 10px; 
   text-align: center; 
+  background-color:#25A7BA;
+  border-radius: 10px;
+  padding: 15px 20px;
 }
 
 .section6 .iframe-table {
@@ -567,7 +568,7 @@ main {
   padding: 0px;
 }
 
-.section button {
+.section8 button {
   margin-bottom: 30px;
 }
 
@@ -595,6 +596,10 @@ main {
   font-size: 20px;
   font-weight: bold;
   text-align: justify;
+}
+
+.pantalla-descrip p {
+  margin-top: 30px;
 }
 
 .pantallas {

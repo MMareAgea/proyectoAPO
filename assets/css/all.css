@@ -351,6 +351,7 @@ main {
   margin-top: 20px;
   text-align: center;
   width: 100%;
+  text-align: justify;
 }
 
 .descrip-etapa h3 {
@@ -557,38 +558,47 @@ main {
   flex-direction: column
 }
 
-.section8 .content .txts {
-  color: #091934
+.section8 {
+  text-align: center;
 }
 
-.section8 .content .txts a {
-  color: #25A7BA
+.section8 h2 {
+  padding: 0px;
 }
 
-.section8 .content .txts .separador {
+.section button {
+  margin-bottom: 30px;
+}
+
+.section8 button a {
+  color: #5eeff7;
+  padding: 10px;
+}
+
+.pantallas {
+  grid-template-rows: repeat(10, 1fr); 
+  grid-template-columns: 1fr; 
+  height: auto; 
+}
+
+.pantalla-item img {
   width: 100%;
-  border-bottom: 1px solid rgba(37,167,186,0.5);
-  padding-bottom: 20px;
-  margin-bottom: 20px
+  text-align: center;
+  margin-left: 18px;
+  margin: 0px 10px;
 }
 
-.section8 .content h4 {
-  color: #25A7BA
+.pantalla-descrip {
+  color:#091934;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: justify;
 }
 
-.section9 .content .numgrande {
-  font-size: 40px;
-  color: #5eeff7
-}
-
-.section9 .content  p {
-  color: white;
-  
-}
-.section9 .content img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%; 
+.pantallas {
+  grid-template-rows: repeat(10, auto); 
+  grid-template-columns: 1fr; 
 }
 
 .section11 .content .lista ul li {
@@ -599,84 +609,8 @@ main {
   font-weight: 700
 }
 
-
-.section14 {
-  background-color: #61d5db
-}
-
-.section14 .content h2 {
-  font-size: 22px;
-  line-height: 30px;
-  color: #091934
-}
-
-.section14 .content .tresitems .item {
-  text-align: center
-}
-
-.section14 .content .tresitems .item .ico {
-  padding-bottom: 10px
-}
-
-.section14 .content .tresitems .item .txt {
-  color: #091934
-}
-
-.section15 .content .bloquemixto .imagen img {
-  width: 100%;
-  height: auto
-}
-
-.section15 .content .bloquemixto .txt ul li {
-  list-style-type: "×  ";
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  color: #5eeff7
-}
-
-.section16 .content .bloque {
-  border-radius: 30px;
-  background: #61d5db;
-  background: linear-gradient(0deg, rgba(97,213,219,0) 0%, rgba(97,213,219,0.16) 100%);
-  text-align: left;
-  padding: 40px 30px
-}
-
-.section16 .content .bloque .logodmp img {
-  filter: invert(1);
-  width: 100%;
-  max-width: 300px;
-  height: auto
-}
-
-.section16 .content .bloque .lista .item {
-  border-bottom: 1px solid rgba(37,167,186,0.5);
-  margin-bottom: 30px;
-  padding-bottom: 30px
-}
-
-.section16 .content .bloque .lista .item .ico {
-  height: 46px;
-  margin-bottom: 20px;
-  text-align: center
-}
-
-.section16 .content .bloque .lista .item .ico img {
-  height: 46px;
-  width: auto
-}
-
-.section16 .content .bloque .lista .item .desc {
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #5eeff7
-}
-
 footer {
-  color: #5eeff7;
+  color:#0a1d3e;
   text-align: center;
   padding: 40px 30px;
   font-size: 16px;
@@ -733,11 +667,11 @@ button a {
   text-align: left;
   border-bottom: 1px solid #ddd;
   font-size: 14px;
-  color: #091934;
+  color:#0a1d3e;
 }
 
 .table-container th {
-  background-color: #091934;
+  background-color:#25A7BA;
   color: #ffffff;
   font-weight: bold;
   font-size: 15px;

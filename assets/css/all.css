@@ -328,7 +328,6 @@ main {
 
 .etapa {
   box-sizing: border-box; 
-  text-align: center;
   background-color: #25A7BA;
   border-radius: 8px; 
   display: flex; 
@@ -350,8 +349,12 @@ main {
 
 .descrip-etapa {
   margin-top: 20px;
-  text-align: start;
-  width: 70%;
+  text-align: center;
+  width: 100%;
+}
+
+.descrip-etapa h3 {
+  font-size: 20px;
 }
 
 .section5 {

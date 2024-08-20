@@ -44,6 +44,15 @@
         flex: 1 1 calc(25% - 20px); 
     }
 
+    .descrip-etapa {
+        width: 70%;
+        text-align: start;
+    }
+
+    .descrip-etapa h3 {
+        font-size: 25px;
+    }
+
     .section5 .content .bloques {
         display: flex;
         flex-wrap: wrap;
@@ -91,6 +100,10 @@
     .section5 .content .bloques .dosbloques .bloque2 .logo img {
         height: 46px
     }
+
+    .section5 .bloques .bloque.bloque-azul {
+        margin-top: 70px;
+      }
 
     .section6 h2 {
         padding-bottom: 130px

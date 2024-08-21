@@ -21,12 +21,2302 @@
     </header>
     <div class="container-aud">
         <h2>Rubros económicos</h2>
-        <div class="list">
-            <div class="iframe-container">
-                <iframe src="/borrador.html" frameborder="0"></iframe>
+        <div class="search-filter-container">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar..." onkeyup="filterItems()">
+                <span class="clear-button" onclick="clearSearch()">✕</span>
+            </div>
+        
+            <div class="filter-container">
+                <select id="rubroFilter" onchange="filterItems()">
+                    <option value="">Todos los Rubros</option>
+                    <option value="Agro">Agro</option>
+                    <option value="Alimentación y bebidas">Alimentación y bebidas</option>
+                    <option value="Automotriz">Automotriz</option>
+                    <option value="Belleza">Belleza</option>
+                    <option value="Construcción y Deco">Construcción y Deco</option>
+                    <option value="Deportes y aficiones">Deportes y aficiones</option>
+                    <option value="Educación y formación">Educación y formación</option>
+                    <option value="Entretenimiento">Entretenimiento</option>
+                    <option value="Medios de comunicación">Medios de comunicación</option>
+                    <option value="Mercado inmobiliario">Mercado inmobiliario</option>
+                    <option value="Negocios y finanzas">Negocios y finanzas</option>
+                    <option value="Organismos e Instituciones">Organismos e Instituciones</option>
+                    <option value="Salud y bienestar">Salud y bienestar</option>
+                    <option value="Supermercado">Supermercado</option>
+                    <option value="Tecnología y electrónica">Tecnología y electrónica</option>
+                    <option value="Telecomunicaciones">Telecomunicaciones</option>
+                    <option value="Viajes y turismo">Viajes y turismo</option>
+                </select>
             </div>
         </div>
+        
+        <div class="reset-container">
+            <button class="reset-button" onclick="clearSearch()">Eliminar Filtros</button>
+        </div>
+        <div class="list">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Anunciante</th>
+                        <th>Rubro Económico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ADAMA ARGENTINA S.A.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>ADVANTA SEMILLAS SAIC</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>AG TECH S.R.L.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>AGRI TECH INVESTMENTS / ARGENTINA S. A. U.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>AGRISEED S.A.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>AGRO JUNIN SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>AKRON SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>ALIANZA SEMILLAS S.A.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>ALL TEC S.A.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>ALLTECH BIOTECHNOLOGY SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>AMAUTA AGRO S.A.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>ASOC. DE COOP. ARG. COOP LTDA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>ASOC.DON MARIO SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Asociacion Argentina Criadores de H</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Asociacion Argentina de Angus</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Asociación Argentina de Productores / en Siembra Directa</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>ASOCIACION CIVIL CAMPOLIMPIO SGE</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>ATANOR SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>BUCK SEMILLAS SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Camara de legumbres de la Republica</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>CAMARA DE SANIDAD AGROPECUARIA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Ciagro Santa Fe SRL</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>CKAPUR S.A.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Claas Argentina SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>CNH Argentina S.A.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Compañia Sud Americana de Dragados</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>CROP CORPORATION S.A.U</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>DARUMA AGRO S.R.L.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>DIAZ RIGANTI CEREALES SRL</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>DOW AGROSCIENCES ARGENTINA S.A.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Emerger Fertilizantes SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Giorgi S.A.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>GRANARIA S.A</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>IF Ingeniería en Fertilizantes S.A.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>IND JOHN DEERE ARGENTINA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>INDECAR MAQUINARIAS SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Industrias Erca S.A.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Industrias Pesce SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>INST. DE PROM. DE CARNE VACUNA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>MAINERO Y CIA SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>MAIZAR ASOCIACION MAIZ ARG</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Mercado Ganadero SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>METALFOR S.A.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>MOJON UNO SOCIEDAD ANONIMA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>MOLINO CHACABUCO SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Nitrap SRL</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>NITRASOIL SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>NOVOZYMES BIOAG SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>NUFARM S.A</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>NUSEED SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>PLANTIUM SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>PROFERTIL SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>PROVIMI ARGENTINA S.A</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Q SEED SRL</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Recuperar SRL</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>RIZOBACTER ARGENTINA SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>SACEIF LOUIS DREYFUS Y CIA LTD.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Salentein</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Satus Ager SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>SPEEDAGRO S.R.L.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>STINE SEED ARGENTINA S.R.L.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Stoller Argentina SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>SYNGENTA AGRO S.A.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>Tecnomyl SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>TIMAC AGRO ARGENTINA SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>TROPFEN S.A</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>UPL ARGENTINA S.A.</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>VALMONT INDUSTRIES DE ARGENTINA S.A</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>YOMEL SA</td>
+                        <td>Agro</td>
+                    </tr>
+                    <tr>
+                        <td>ACDE (Asoc. Crist. Dirigentes de / Empresa)</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>ACEITERA GENERAL DEHEZA SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>ARCOR S.A.</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>ARCOS DORADOS ARGENTINA S.A.</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>BIMBO DE ARGENTINA SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>BONAFIDE S.A.I.C</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>CAMPARI ARG. SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>CEPAS ARG. SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>CERVECERIA Y MALTERIA QUILMES SAICAG</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>CIA IND. CERVECERA SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>CIA. IND. CERVECERA SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>COCA COLA FEMSA de Bs. As. S.A.</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>Danone Argentina S.A.</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>FAST FOOD SUDAMERIC. S.A.</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>FRATELLI BRANCA DESTILERIAS SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>KRAFT FOODS ARG. SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>Ledesma S.A.</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>LEONCIO ARIZU SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>MAROLIO SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>MASTELLONE HNOS SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>MC CAIN ARGENTINA SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>Mc Donalds</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>MILKAUT SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>Mondelez</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>NESTLE ARGENTINA S.A.</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>NIGOUL SOCIEDAD ANONIMA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>PEDIDOSYA SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>Pepsico de Arg. S.R.L.</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>PET FOODS SALADILLO SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>R.P.B. SA</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>Red Bull Argentina SRL</td>
+                        <td>Alimentación y bebidas</td>
+                    </tr>
+                    <tr>
+                        <td>Aca Salud Coop Prest Serv Medico Asis</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>ALIZZE S.A</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>Auto Sports S.A.</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>AUTOMOVIL CLUB ARGENTINO</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>AUTOPISTAS URBANAS S.A.</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>AUTOROUTE SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>AVIGNON AUTO S.A</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>Baterplac SRL</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>BM CENTRO S.A</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>CHECK MOVILIDAD S.A.</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>CHINATECH S.A.</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>CORVEN MOTORS ARGENTINA S.A.</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>Cosan Lubricantes SRL</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>EMILIO JORGE FERRO SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>Escandinavia Del Plata S.A.</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>ESPASA SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>FATE SAICI</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>FCA AUTOMOBILE</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>Fenoglio y Capello SRL</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>FIAT AUTO ARGENTINA S.A.</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>FORD ARGENTINA S.C.A.</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>GENERAL MOTORS DE ARG. SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>GILERA MOTORS ARGENTINA SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>HONDA MOTOR DE ARG. SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>IVECO ARGENTINA SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>L'VOITURE SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>LEPIC S.A.</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>MICHELIN ARG. SAICYF</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>NEUMASUR SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>NISSAN ARGENTINA SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>ORG. SUR AUTOMOTORES SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>PEARA SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>PEUGEOT CITROEN ARG. SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>PLAN ROMBO SA DE AHORRO</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>RENAULT ARGENTINA S.A.</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>SEMATRYN SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>Tasinazzo Cristian Jose</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>TOYOTA ARG. SA</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>VENEZIA AUTO S.A.</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>VOLKSWAGEN ARGENTINA S.A.</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>Zanella Hnos y Cia. S.A.</td>
+                        <td>Automotriz</td>
+                    </tr>
+                    <tr>
+                        <td>COSMETICOS AVON S.A.C.I.</td>
+                        <td>Belleza</td>
+                    </tr>
+                    <tr>
+                        <td>Coty Argentina S.A.</td>
+                        <td>Belleza</td>
+                    </tr>
+                    <tr>
+                        <td>DIFFUPAR SA</td>
+                        <td>Belleza</td>
+                    </tr>
+                    <tr>
+                        <td>ISDIN ARGENTINA SA</td>
+                        <td>Belleza</td>
+                    </tr>
+                    <tr>
+                        <td>L'OREAL ARGENTINA S.A.</td>
+                        <td>Belleza</td>
+                    </tr>
+                    <tr>
+                        <td>Lidherma S.A.</td>
+                        <td>Belleza</td>
+                    </tr>
+                    <tr>
+                        <td>NEW REVLON ARG. SA</td>
+                        <td>Belleza</td>
+                    </tr>
+                    <tr>
+                        <td>PIERRE FABRE DERMO COSMET. ARG. SA</td>
+                        <td>Belleza</td>
+                    </tr>
+                    <tr>
+                        <td>PUIG ARGENTINA S.A.</td>
+                        <td>Belleza</td>
+                    </tr>
+                    <tr>
+                        <td>ASOC DE DISTRIBUIDORES DE GAS</td>
+                        <td>Combustibles y energéticas</td>
+                    </tr>
+                    <tr>
+                        <td>EDENOR SA</td>
+                        <td>Combustibles y energéticas</td>
+                    </tr>
+                    <tr>
+                        <td>ENERGE BA SA</td>
+                        <td>Combustibles y energéticas</td>
+                    </tr>
+                    <tr>
+                        <td>PAN AMERICAN ENERGY, S.L., SUCURSAL / ARGENTINA</td>
+                        <td>Combustibles y energéticas</td>
+                    </tr>
+                    <tr>
+                        <td>Petroquimica Comodoro Rivadavia SA</td>
+                        <td>Combustibles y energéticas</td>
+                    </tr>
+                    <tr>
+                        <td>SHELL CIA. ARG DE PETROLEO</td>
+                        <td>Combustibles y energéticas</td>
+                    </tr>
+                    <tr>
+                        <td>SHELL CIA. ARG. DE PETROLEO</td>
+                        <td>Combustibles y energéticas</td>
+                    </tr>
+                    <tr>
+                        <td>TRAFIGURA ARGENTINA SA</td>
+                        <td>Combustibles y energéticas</td>
+                    </tr>
+                    <tr>
+                        <td>YPF GAS SA</td>
+                        <td>Combustibles y energéticas</td>
+                    </tr>
+                    <tr>
+                        <td>YPF S.A.</td>
+                        <td>Combustibles y energéticas</td>
+                    </tr>
+                    <tr>
+                        <td>ABELSON SA</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>ABERTURAS 3 DE FEBRERO SRL</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>ALUAR ALUMINIO ARG. SA</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>Aluwind Sa</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>Ba Mall SRL</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>cementos avellaneda sa</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>Ceramica Fanelli SA</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>Cerámica Quilmes SACIF</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>COMBE POWER SA</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>DURLOCK SA</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>Fertilizantes Fulltec Srl</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>FEXA</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>GB2 CONSTRUCCIONES SRL</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>HYDRO ALUMINIUM ARGENTINA S A</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>I.R.S.A. S.A.</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>IND. PLASTICAS POR EXTRUSION SA</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>LATER CER S.A</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>MEDICIONES EVEL S.A.</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>Mitolo Ivana</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>OBLAK HNOS SACIFI</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>PARQUE PAMPA S.A.</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>PASFAS S.A.</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>PATAGONIA CNC MACHINES S.A.</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>REDIMAT S.A.</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>Rotoplas Argentina SA</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>SAINT GOBAIN WEBER ARG. SA</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>SIDERAR SA</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>Sika Argentina SAIC</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>SINTEPLAST SA</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>STIHL MOTOIMPLEMENTOS SA</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>SUR EXTREMO SA</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>TINPUKIN SRL</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>TORQUINSON S.A</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>UNIMACO S.A.</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>VICCHIO MIGUEL ANGEL</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>YESOS KNAUF GMBH</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>YouArq</td>
+                        <td>Construcción y Deco</td>
+                    </tr>
+                    <tr>
+                        <td>DABRA SA</td>
+                        <td>Deportes y aficiones</td>
+                    </tr>
+                    <tr>
+                        <td>ASOC CIVIL UNIVERSIDAD DEL CEMA</td>
+                        <td>Educación y formación</td>
+                    </tr>
+                    <tr>
+                        <td>Asoc Civil Universidad del Salvador</td>
+                        <td>Educación y formación</td>
+                    </tr>
+                    <tr>
+                        <td>CODERHOUSE S.R.L.</td>
+                        <td>Educación y formación</td>
+                    </tr>
+                    <tr>
+                        <td>CRECIDES - FUNDACION EDUCATIVA CREC</td>
+                        <td>Educación y formación</td>
+                    </tr>
+                    <tr>
+                        <td>Cuspide S.A.</td>
+                        <td>Educación y formación</td>
+                    </tr>
+                    <tr>
+                        <td>FUNDACION UNIVERSIDAD DE SAN ANDRES</td>
+                        <td>Educación y formación</td>
+                    </tr>
+                    <tr>
+                        <td>Fundación Universidad Torcuato / Di Tella</td>
+                        <td>Educación y formación</td>
+                    </tr>
+                    <tr>
+                        <td>Image Campus SA</td>
+                        <td>Educación y formación</td>
+                    </tr>
+                    <tr>
+                        <td>LA GRECA DARIO OSCAR</td>
+                        <td>Educación y formación</td>
+                    </tr>
+                    <tr>
+                        <td>UADE - UNIV ARG DE LA EMPRESA</td>
+                        <td>Educación y formación</td>
+                    </tr>
+                    <tr>
+                        <td>UNIVERSIDAD DE BUENOS AIRES</td>
+                        <td>Educación y formación</td>
+                    </tr>
+                    <tr>
+                        <td>Universidad Nacional de Tres de Feb</td>
+                        <td>Educación y formación</td>
+                    </tr>
+                    <tr>
+                        <td>6 P SA</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>ABAL LAMAS JAVIER EDUARDO</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>BINBAIRES SA INTRALOT INTERNATIONAL</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>BLUETEAM S.A.</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>BOLDT SA</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>Canning Multiplex SRL</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>Casino Buenos Aires SA</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>CASINO DE VICTORIA S.A. - BETSSON M</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>CINEMARK ARGENTINA SA</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>CINEMATOGRAFICA VANGUARDIA SRL</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>CODERE ONLINE ARGENTINA S. A.</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>HIPODROMO ARGENTINO DE PALERMO S.A. / CASINO CLUB S.A. - U.T.E.</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>HOYTS GENERAL CINEMA DE ARG SA</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>IBERARGEN SA</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>INSIPIA LTD, SUCURSAL ARGENTINA - A</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>INST. PROV. DE LOTERIA Y CASINOS</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>Lotería de la Ciudad S.E.</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>NETFLIX Inc.</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>NETFLIX SERVICIOS DE TRANSMISION AR</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>PRODUCCIONES EB SRL</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>QUE LINDO ENTERTAINMENT S.A</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>QUINI 6 - LOTERIA DE SANTA FE</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>SHOWCENTER SA</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>Teatris SRL</td>
+                        <td>Entretenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>Altenis Argentina S.R.L.</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>APT BA SRL</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>Conf. Sudamericana de Futbol / CONMEBOL</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>DAT280</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>DF ENTERTAINMENT S.A. EN FORMACION</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>DF FESTIVAL</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>DG EXPERIENCE S.A.</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>Exp y Ferias de la Const Arg SA</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>EXPONENCIAR SA</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>FOGGIA GROUP S.A.</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>FREIXENET ARG S.A.</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>FUNDACION ARTE BA</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>FUNDACION EL LIBRO</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>Fundación Huésped</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>HYT INVESTMENTS SA</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>JUVENTUS LYRICA ASOCIACION DE OPERA / Y OPERA DE CAMARA ASOCIACION CIVIL</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>Los Musicales SRL</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>OYMYAKON S.A.</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>Pop Teatro</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>SUPERACCION S.R.L.</td>
+                        <td>Eventos y actividades</td>
+                    </tr>
+                    <tr>
+                        <td>Abuelo Juan S.R.L.</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>CARRIER SOCIEDAD ANONIMA</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>ECOFACTORY S.R.L</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>EINHELL ARGENTINA S.A.</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>HAFELE ARG. SA</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>Hunter Douglas Argentina S.A.</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>LA CARDEUSE SA</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>LA PAPELERA DEL PLATA SA</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>Muebles y sillones SA</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>Patagonia Candles SRL</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>PIERO SAIYCI</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>RIELAMERICANO SACI</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>SANITARIOS TH SA</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>SIMMONS DE ARGENTINA SAIC</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>TEKNO FLOORING S.A.</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>VERSSION S.A.</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>Wamaro SA</td>
+                        <td>Hogar y Jardin</td>
+                    </tr>
+                    <tr>
+                        <td>AGEA S.A. Av. Gcía. Circulación</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>AGEA S.A. Av. Gcía. Comercial</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>AGEA S.A. Av. Gcía. Rel. Corpo.</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>AGEA-Clasificados</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>AGEA-Marketing</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Ahora Mama S.A.</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>AMERICA T.V. SA</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Ánfora Consulting SAS</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>ARTHUR NEWTON COMMUNICATION S.R.L.</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>BA Diversity Media Inc</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>BUSTAMANTE ADRIANA ROSA</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>CENTRO PUBLICITARIO S A</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>CONDIMO S.R.L.</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>DAK GRUPO CREATIVO S.R.L</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Diamond Films S.A.</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>ENTERTAINMENT WORLD</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>EURALIA ARGENTINA SA</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>F2F GLOBAL S.A</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Filmsuez S.A.</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Go Digital SRL</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>GRUPO PMG S.A</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>HEXAGONE PRODUCCIONES S.A.S.</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>IPG MEDIA BRANDS SA</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>K PRODUCCIONES SA</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>KENWIN SA</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>KUARZO ARGENTINA S.A.</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>L S 4 RADIO CONTINENTAL S A</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>LA PASTELERA PRODUCCIONES S.R.L</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>LANDE GUSTAVO ALBERTO</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>LIBERMAN MARISA</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>LION PRODUCCIONES S.A</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>LOPEZ DELL AVO MARIA FLORENCIA</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>MARKETING LIQUIDO S.A.</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>MINDSHARE GMBH</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>MMS COMUNICACIONES ARGENTINA S.A.</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>MTV Networks Argentina S.R.L.</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Navitime SA</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Perfeta Producciones SA</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Periódicos Asociados Latinoamericanos</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>PISCITELLI  ALESSANDRO SEBASTIAN</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>PUNTO NET PUBLICIDAD</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>RADIO VICTORIA FUEGUINA SA</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Radiodifusora Bs. As. S.A. (At. Thumann)</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Receptoría Monte Grande</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Red Celeste y Blanca Saef</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>SERVICIOS Y MARKETING AGROPECUARIO</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>SERVICIOS Y PRODUCTOS PARA BEBIDAS</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>SICCHAR GOMEZ CARLOS WILFREDO</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Sony Picture Releasing Argentina SRL</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Sunmedia</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Tauro Broadcast SRL</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Telam Sociedad del Estado</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>TELE RED IMAGEN S.A.</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>TFCF LATIN AMERICAN CHANNEL</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>The Walt Disney Company (Arg.) S.A.</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>UNITED INT. PICTURES SRL</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>UNIVERSAL MEDIA SEVEN FZ-LLO</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>VITREAUX COMUNICACIONES</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>WARNER BROS SOUTH INC</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Warner Media Direct Latin America</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>WebAds Interactive, SL / CIF/VAT: ES B85828937</td>
+                        <td>Medios de comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>ARMANDO PEPE SA</td>
+                        <td>Mercado inmobiliario</td>
+                    </tr>
+                    <tr>
+                        <td>ASOC.ARG.DE CONSORCIOS REGIONAL</td>
+                        <td>Mercado inmobiliario</td>
+                    </tr>
+                    <tr>
+                        <td>DALVIAN S.A.</td>
+                        <td>Mercado inmobiliario</td>
+                    </tr>
+                    <tr>
+                        <td>EL PORTEÑO APARTMENTS LLC / SUCURSAL ARGENTINA</td>
+                        <td>Mercado inmobiliario</td>
+                    </tr>
+                    <tr>
+                        <td>FIDEICOMISO INMOBILIARIO "MADERO 6"</td>
+                        <td>Mercado inmobiliario</td>
+                    </tr>
+                    <tr>
+                        <td>GRUPO INMOBILIARIO DONATO SA</td>
+                        <td>Mercado inmobiliario</td>
+                    </tr>
+                    <tr>
+                        <td>GRUPO PIÑHERO S. A. S.</td>
+                        <td>Mercado inmobiliario</td>
+                    </tr>
+                    <tr>
+                        <td>Mercado S.A Adrian</td>
+                        <td>Mercado inmobiliario</td>
+                    </tr>
+                    <tr>
+                        <td>Pinamar SA Comercial Inmobiliaria</td>
+                        <td>Mercado inmobiliario</td>
+                    </tr>
+                    <tr>
+                        <td>Situar Propiedades SA</td>
+                        <td>Mercado inmobiliario</td>
+                    </tr>
+                    <tr>
+                        <td>Adidas Argentina S.A.</td>
+                        <td>Deportes y aficiones</td>
+                    </tr>
+                    <tr>
+                        <td>ALPARGATAS CALZADOS S.A.</td>
+                        <td>Moda (indumentaria y acc)</td>
+                    </tr>
+                    <tr>
+                        <td>ALPARGATAS S.A.I.C.</td>
+                        <td>Moda (indumentaria y acc)</td>
+                    </tr>
+                    <tr>
+                        <td>ANTONIO LUQUIN S A C I F E I</td>
+                        <td>Moda (indumentaria y acc)</td>
+                    </tr>
+                    <tr>
+                        <td>Confecat S.A.</td>
+                        <td>Moda (indumentaria y acc)</td>
+                    </tr>
+                    <tr>
+                        <td>DIMAWOL S.A.</td>
+                        <td>Moda (indumentaria y acc)</td>
+                    </tr>
+                    <tr>
+                        <td>GENEROS Y DISEÑO SRL</td>
+                        <td>Moda (indumentaria y acc)</td>
+                    </tr>
+                    <tr>
+                        <td>GIESSO S.A.</td>
+                        <td>Moda (indumentaria y acc)</td>
+                    </tr>
+                    <tr>
+                        <td>ID Argentina S.A.</td>
+                        <td>Moda (indumentaria y acc)</td>
+                    </tr>
+                    <tr>
+                        <td>Maincal sa</td>
+                        <td>Moda (indumentaria y acc)</td>
+                    </tr>
+                    <tr>
+                        <td>NEW ARRECIFE S.A</td>
+                        <td>Moda (indumentaria y acc)</td>
+                    </tr>
+                    <tr>
+                        <td>PUMA SPORTS ARGENTINA SA</td>
+                        <td>Deportes y aficiones</td>
+                    </tr>
+                    <tr>
+                        <td>SCANDINAVIAN OUTDOORS S.A.</td>
+                        <td>Deportes y aficiones</td>
+                    </tr>
+                    <tr>
+                        <td>SOUTH W GROUP SA</td>
+                        <td>Moda (indumentaria y acc)</td>
+                    </tr>
+                    <tr>
+                        <td>SOUTHAMERICAN TRENDY S.A.</td>
+                        <td>Moda (indumentaria y acc)</td>
+                    </tr>
+                    <tr>
+                        <td>Vicbor SRL</td>
+                        <td>Moda (indumentaria y acc)</td>
+                    </tr>
+                    <tr>
+                        <td>AMERICAN EXPRESS ARG. S.A</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>ASSIST CARD S.A. ARG.SERVICIOS</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>BANCO DE GALICIA Y BS AS S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>BANCO DE LA CIUDAD DE BS. AS.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>BANCO DE LA PCIA DE BS AS</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>BANCO DE LA PROV.DE CORDOBA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>Banco Hipotecario S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>Banco Macro S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>BANCO MACRO SA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>Banco Patagonia S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>BANCO SANTANDER RIO SA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>BANCO SUPERVIELLE SOCIEDAD ANONIMA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>BAPRO MEDIOS DE PAGO S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>BBVA Banco Francés S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>BCO. DE SAN JUAN SA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>BCO. ITAU BUEN AYRE SA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>BIBANK S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>CAJA DE SEGUROS S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>Car Security S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>CARTASUR CARDS SA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>COCOS CAPITAL SA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>COMPERCOM AGRUPACION DE COLABORACIO</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>CONSEJO PROFESIONAL CS ECONOMICAS</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>Decreditos SA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>DEGAL DEPOSITOS SRL</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>Exness Global Limited</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>FIDEICOMISO FINANCIERO PILAY I</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>GC GESTION COMPARTIDA S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>Grupo GO</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>HSBC BANK ARG. SA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>INVERTIRONLINE S.A.U.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>LA SEGUNDA COOPERATIVA LTDA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>Mastercard Cono Sur S.R.L.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>MASTERCARD INTERNACIONAL - MIAMI</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>NUEVO BANCO DE ENTRE RIOS SA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>NUEVO BANCO DE SANTA FE S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>OPENPAY ARGENTINA S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>PLAY DIGITAL S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>PRISMA MEDIOS DE PAGO S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>PROV. ASEG DE RIESGOS DEL TRABAJO</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>Provincia Seguros de Vida S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>PROVINCIA SEGUROS SA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>PRUDENTIAL SEGUROS SA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>Puente Hermanos Sociedad de</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>San Cristobal S.M. de Seguros Gener</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>SANCOR COOP. DE SEGUROS LTDA.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>Standard Bank Argentina SA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>Tarjeta Naranja S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>TCC LEASING S.A.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>Teads</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>TransparentBusiness Inc.</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>TUTELAR CIA FINANCIERA SA</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>VISA INTERNATIONAL ARGENTINA SRL</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>ACCION VECINAL SAN ISIDRO / ES DISTINTO</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>ALIANZA JUNTOS POR EL CAMBIO</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>Alianza Juntos por el Cambio Distrito / Capital Federal A.P.- ALIANZA</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>CAMARA ARGENTINA DE COMERCIO ELECTRÓNICO</td>
+                        <td>Negocios y finanzas</td>
+                    </tr>
+                    <tr>
+                        <td>Fondation Forge</td>
+                        <td>Educación y formación</td>
+                    </tr>
+                    <tr>
+                        <td>FRENTE DE IZQUIERDA Y DE TRABAJADOR / UNIDAD - BUENOS AIRES A. P.</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>FRENTE DE IZQUIERDA Y DE TRABAJADORES - / UNIDAD - ORDEN NACIONAL A. P. - A</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>GCABA Dir Gral de Medios y Plan Est</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>GCBA</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>GOBERNACION DE LA PROV. DE BS AS</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>HACEMOS POR NUESTRO PAIS A. P. - AL</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>JUNTOS POR EL CAMBIO - ORDEN NACIONAL</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>JUNTOS POR EL CAMBIO ORDEN NACIONAL A.P. ALIANZA</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>JUNTOS POR EL CAMBIO. A. P. - ALIA</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>LEGISLATURA DE LA CIUDAD Cap.</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>MINISTERIO DE COMUNICACIÓN PUBLICA</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>MINISTERIO DE HACIENDA ,FINANZAS , / Misiones</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>MINISTERIO DE TURISMO</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>MUNICIPALIDAD DE ESCOBAR</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>MUNICIPALIDAD DE ITUZAINGO</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>MUNICIPALIDAD DE LANUS</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>MUNICIPALIDAD DE MERLO</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>MUNICIPALIDAD DE MORON</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>MUNICIPALIDAD DE ROSARIO</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>MUNICIPALIDAD DE SAN ISIDRO</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>MUNICIPALIDAD DE VICENTE LOPEZ</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>OFICINA COMERCIAL Y CULTURAL DE TAIPEI</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>PROVINCIA DE MENDOZA</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>Registro Nacional</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>Sec Gral de la Gob Pcia San Juan</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>UNION CIVICA RADICAL JUJUY</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>UNION INDUSTRIAL ARG.</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>UNION OBREROS Y EMPLEADOS PLASTICOS</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>UNION POR LA PATRIA A.P. - ALIANZA</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>UNION POR LA PATRIA PBA A.P. - ALIA</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>Abbott Ensure</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>BAYER ARG. SA</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>Biogenesis Bago SA</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>Centro Diagnostico Veterinario SA</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>confederación farmaceutica arg.</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>FARMACITY SA</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>FMC QUIMICA S.A.</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>FUND. OFTALMOLOGICA ARG.</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>GADOR SA</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>Gaes S.A.</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>GRAMON MILLET S.A.</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>GSK BIOPHARMA ARGENTINA S.A</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>JOHNSON Y JOHNSON DE ARGENTINA S A</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>LAB. CASASCO SAIC</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>LAB. CUENCA SA</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>LABORATORIOS BERNABO S.A.</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>LABORATORIOS PEYTE S.A.</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>MEDICUS S.A.</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>MEDIFE SA</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>MEDIFE-ACCION SOC. EMPR. ASE. ASOC.</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>MERCK SHARP Y DOHME ARG. INC.</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>MEREYO SRL</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>Obra Social de la ciudad / de Buenos Aires</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>OMINT SA DE SERVICIOS</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>OSDE Organización de Servicios</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>PEREZ MARIA ROSA</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>PONS CECILIA NOEMI</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>ROEMMERS SAICF</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>Sanofi Pasteur SA</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>SMITHKLINE BEECHAM ARG. SA</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>SOCORRO MEDICO PRIVADO SA</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>Swiss Medical S.A.</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>UNILEVER DE ARGENTINA S.A.</td>
+                        <td>Salud y bienestar</td>
+                    </tr>
+                    <tr>
+                        <td>CENCOSUD S.A.</td>
+                        <td>Supermercado</td>
+                    </tr>
+                    <tr>
+                        <td>CHEEK S.A.</td>
+                        <td>Supermercado</td>
+                    </tr>
+                    <tr>
+                        <td>COTO CENTRO INTEGRAL DE COM.SA</td>
+                        <td>Supermercado</td>
+                    </tr>
+                    <tr>
+                        <td>Día Argentina S.A</td>
+                        <td>Supermercado</td>
+                    </tr>
+                    <tr>
+                        <td>INC S.A.</td>
+                        <td>Supermercado</td>
+                    </tr>
+                    <tr>
+                        <td>MAYCAR SA</td>
+                        <td>Supermercado</td>
+                    </tr>
+                    <tr>
+                        <td>MERCADOLIBRE S.R.L.</td>
+                        <td>Supermercado</td>
+                    </tr>
+                    <tr>
+                        <td>RICARDO NINI SA</td>
+                        <td>Supermercado</td>
+                    </tr>
+                    <tr>
+                        <td>Wal Mart Argentina S.A.</td>
+                        <td>Supermercado</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>ADman</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Alau Tecnología S.A.U.</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>AMAZON DIGITAL SERVICES INC</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Aplicación Tecnologica S.A.</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>AWG</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>B.G.H. S.A.</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>CETROGAR S.A.</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Clever Ads</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Coppel SA</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Gurues S.A</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>DigoHispanicMedia</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Electro Outlet SRL</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Electronica Megatone SA</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>EPSON ARG. SA</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Facebook</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>FINMA SA</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Google</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Google Argentina SRL</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>H Code</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>INFORMATICA VIP SRL</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Lenovo (Spain) S. L. Sucursal Argen</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>MS TECHNOLOGIES ARGENTINA SRL</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Naldo Lombardi SA</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>NEWSAN SA</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>NGL</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>OMNICHANNEL S.A.</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Optima Network</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Pardo S.A.</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>PILISAR S.A.</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Primis</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Prisa</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>REMIBRE SRL</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>SADKAL</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>SAMSUNG ELECTRONICS ARGENTINA SA</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Seedtag</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Syna S.A.</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>TECH DEMETER S.A.</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>TECHNOLOGY SUPPORT SERVICES ARGENTI</td>
+                        <td>Tecnología y electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Alvis SA</td>
+                        <td>Telecomunicaciones</td>
+                    </tr>
+                    <tr>
+                        <td>CORREO OFICIAL DE LA REP ARG S.A.</td>
+                        <td>Telecomunicaciones</td>
+                    </tr>
+                    <tr>
+                        <td>DIRECTV ARGENTINA SA</td>
+                        <td>Telecomunicaciones</td>
+                    </tr>
+                    <tr>
+                        <td>GMRA S.A.</td>
+                        <td>Telecomunicaciones</td>
+                    </tr>
+                    <tr>
+                        <td>Imagen Satelital S.A.</td>
+                        <td>Telecomunicaciones</td>
+                    </tr>
+                    <tr>
+                        <td>SKYTEL TELECOMUNICAC. ARG. SA</td>
+                        <td>Telecomunicaciones</td>
+                    </tr>
+                    <tr>
+                        <td>Telecentro S.A.</td>
+                        <td>Telecomunicaciones</td>
+                    </tr>
+                    <tr>
+                        <td>TELECOM ARGENTINA S.A.</td>
+                        <td>Telecomunicaciones</td>
+                    </tr>
+                    <tr>
+                        <td>AEROLINEAS ARGENTINAS S.A.</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>AEROPUERTOS ARG. 2000 SA</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>Air Europa Líneas Aéreas S.A.U.</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>ARAKUR SA</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>Ariel del Plata S.A.</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>BEAVER MOUNTAIN</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>CLUB MEDITERRANEE ARGENTINA SA</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>EMPROTUR</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>ENTE MUN. DE TURISMO DE M DEL PLATA</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>JETSMART AIRLINES SA</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>JOMALU SA</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>Latina de Gestion Hotelera SA</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>Ocean Export SA</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>Tierra a la vista SA</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>Turismo SEM Agencia Córdoba</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>UNIVERSAL ASSISTANCE SOCIEDAD</td>
+                        <td>Viajes y turismo</td>
+                    </tr>
+                    <tr>
+                        <td>MASSALIN PARTICULARES SRL</td>
+                        <td>​</td>
+                    </tr>
+                    <tr>
+                        <td>SMS-SAN MARTIN SUAREZ Y ASOCIADOS / SOCIEDAD CIVIL</td>
+                        <td>Organismos e Instituciones</td>
+                    </tr>
+                    <tr>
+                        <td>SportPromo</td>
+                        <td>Deportes y aficiones</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
     </div>
+
+    <script>
+        function filterItems() {
+    let input = document.getElementById('searchInput').value.toLowerCase();
+    let rubroFilter = document.getElementById('rubroFilter').value.toLowerCase();
+    let table = document.querySelector('.styled-table tbody');
+    let rows = table.getElementsByTagName('tr');
+
+    for (let i = 0; i < rows.length; i++) {
+        let cells = rows[i].getElementsByTagName('td');
+        let match = false;
+
+        if (cells.length > 0) {
+            let rubro = cells[1].textContent.toLowerCase();
+            let textContent = rows[i].textContent.toLowerCase();
+
+            if ((rubroFilter === "" || rubro.includes(rubroFilter)) && 
+                (input === "" || textContent.includes(input))) {
+                match = true;
+            }
+        }
+
+        rows[i].style.display = match ? "" : "none";
+    }
+}
+
+function clearSearch() {
+    document.getElementById('searchInput').value = '';
+    document.getElementById('rubroFilter').value = '';
+    filterItems();  
+}
+
+    </script>
     
 </body>
 </html>

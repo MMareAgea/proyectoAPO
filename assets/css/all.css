@@ -590,12 +590,30 @@ main {
   margin: 0px 10px;
 }
 
-.pantalla-descrip {
+.pantalla-descrip, .imp-descrip {
   color:#091934;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: bold;
   text-align: justify;
+}
+
+.imp-descrip {
+  color: #E7F8FA;
+}
+
+.section11 h3 {
+  margin-top: 50px;
+}
+
+.pantallas-imp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(3, auto);  
+}
+
+.pantallas-imp h3 {
+  text-align: start;
 }
 
 .pantalla-descrip p {
@@ -605,14 +623,6 @@ main {
 .pantallas {
   grid-template-rows: repeat(10, auto); 
   grid-template-columns: 1fr; 
-}
-
-.section11 .content .lista ul li {
-  border-bottom: 1px solid rgba(37,167,186,0.5);
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  color: #091934;
-  font-weight: 700
 }
 
 footer {
@@ -699,3 +709,5 @@ button a {
 .table-container th:nth-child(3), .table-container td:nth-child(3) {
   padding-left: 20px;
 }
+
+

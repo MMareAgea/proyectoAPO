@@ -133,7 +133,7 @@
         box-sizing: border-box; 
       }
       
-      .pantalla-descrip {
+      .pantalla-descrip, .imp-descrip {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -149,22 +149,6 @@
         margin: 0 auto;
         padding-bottom: 40px
     }
-
-    .section11 .content .lista,.section11 .content h3 {
-        max-width: 75%;
-        margin: 0 auto
-    }
-
-    .section11 .content .lista ul {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap
-    }
-
-    .section11 .content .lista ul li {
-        width: calc(50% - 10px)
-    }
-    
 
 }
 
@@ -318,7 +302,26 @@
     .pantalla-item:nth-child(9) { grid-area: item5; }
     .pantalla-descrip:nth-child(10) { grid-area: desc5; }
     .pantalla-descrip:nth-child(11) { grid-area: item6; }
- }
+
+
+    .pantallas-imp {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "item1"
+            "desc1"
+            "item2"
+            "desc2"
+            "item3"
+            "desc3";
+    }
+
+    .pantalla-item:nth-of-type(1) { grid-area: item1; }
+    .imp-descrip:nth-of-type(1) { grid-area: desc1; }
+    .pantalla-item:nth-of-type(2) { grid-area: item2; }
+    .imp-descrip:nth-of-type(2) { grid-area: desc2; }
+    .pantalla-item:nth-of-type(3) { grid-area: item3; }
+    .imp-descrip:nth-of-type(3) { grid-area: desc3; }
+}
 
 
 

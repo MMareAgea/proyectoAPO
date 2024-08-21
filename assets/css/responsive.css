@@ -204,7 +204,7 @@
 
     
     .table-container th:nth-child(2), .table-container td:nth-child(2) {
-        width: 60px; 
+        width: 70px; 
         white-space: nowrap; 
         overflow: hidden; 
         text-overflow: ellipsis; 

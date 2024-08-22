@@ -390,8 +390,13 @@
     }
 
     .styled-table td span {
-        max-width: 100%; 
-        text-align: left;
+        display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%; 
+    font-size: 10px;
+    margin-bottom: 5px; 
     }
 
     

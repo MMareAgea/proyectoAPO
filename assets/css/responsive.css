@@ -390,7 +390,7 @@
     }
 
     .styled-table td span {
-        max-width: 10px; 
+        max-width: 100%; 
         text-align: left;
     }
 

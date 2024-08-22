@@ -343,7 +343,7 @@
         overflow-x: hidden; 
         padding: 0; 
         margin-left: 0px; 
-        align-items: left;
+        text-align: left;
     }
 
     .styled-table th, .styled-table td {
@@ -383,7 +383,18 @@
     .styled-table th {
         max-width: 30px;
         min-width: 30px;
+        text-align: left;
     }
+    .styled-table td {
+        line-height: 1.5; 
+    }
+
+    .styled-table td span {
+        max-width: 10px; 
+        text-align: left;
+    }
+
+    
         
       }
 

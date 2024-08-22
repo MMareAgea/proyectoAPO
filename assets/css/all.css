@@ -734,6 +734,7 @@ button a {
   background-color: #009879;
   color: #ffffff;
   text-align: center;
+  font-size: 18px;
 }
 
 .styled-table th,
@@ -741,6 +742,7 @@ button a {
   padding: 6px 8px;  
   line-height: 1.4;  
   vertical-align: top; 
+  text-align: left        ;
 }
 
 

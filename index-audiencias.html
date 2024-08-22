@@ -15,7 +15,7 @@
     <title>Campaign Performance Optimization (CPO)</title>
   </head>
   <body>
-    <body>
+    
       <header>
           <div class="logo"></div>
           <div class="proyecto">
@@ -275,15 +275,16 @@
                             </tr>
                             <tr>
                                 <td>Seguros</td>
-                                <td>
-                                    <span>BANCO DE LA CIUDAD DE BS. AS.</span>
-                                    <span>BANCO SANTANDER RIO SA</span>
-                                    <span>BANCO SUPERVIELLE SOCIEDAD ANONIMA</span>
-                                </td>
+                                <td>BANCO DE LA CIUDAD DE BS. AS.</td>
                             </tr>
-                            <tr>
                                 <td>Servicios Fintech</td>
-                                <td>Banco Macro S.A.</td>
+                                <td>
+                                    <span>BANCO SANTANDER RIO SA</span>
+                                <span>BANCO SUPERVIELLE SOCIEDAD ANONIMA</span>
+                                    <span>Banco Macro S.A.</span>
+
+                                    </td>
+                                
                             </tr>
                             <tr class="rubro-separador">
                                 <td rowspan="3"><strong>Viajes y turismo</strong></td>
@@ -834,5 +835,25 @@
             var dropdownContent = document.querySelector('.dropdown-content');
             dropdownContent.classList.toggle('show');
         }
+
+        document.addEventListener("DOMContentLoaded", function() {
+    var backToTopButton = document.getElementById("back-to-top");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 200) { 
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    });
+
+    backToTopButton.addEventListener("click", function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
     </script>
+    <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+
+    </body>
 </html>

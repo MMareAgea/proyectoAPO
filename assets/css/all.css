@@ -711,14 +711,24 @@ button a {
 }
 
 .styled-table {
+  table-layout: auto; 
   width: 100%;
   border-collapse: collapse;
-  margin: 25px 0;
   font-size: 14px;
-  text-align: left;
-  font-family: Arial, sans-serif;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5f94e4;
+  background-color: #080d32;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  
+  justify-content: center;
+  align-items: center;
+  
+  
 }
+
+
 
 .styled-table thead tr {
   background-color: #009879;
@@ -751,6 +761,15 @@ button a {
 .styled-table td {
   color: #091934; 
   background-color: #ffffff; 
+  line-height: 1.5; 
+}
+.styled-table td span {
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+.styled-table td span:last-child {
+  margin-bottom: 0; 
 }
 
 .styled-table tr.rubro-separador td {
@@ -759,6 +778,26 @@ button a {
 
 .styled-table td:last-child {
   padding-right: 15px; 
+}
+
+.styled-table th:nth-child(1),
+.styled-table td:nth-child(1) {
+    max-width: 100%; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.styled-table th:nth-child(2),
+.styled-table td:nth-child(2) {
+    white-space: normal;
+}
+
+.styled-table th:nth-child(3),
+.styled-table td:nth-child(3) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 

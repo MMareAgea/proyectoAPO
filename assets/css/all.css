@@ -577,20 +577,24 @@ main {
   padding: 10px;
 }
 
-.pantallas {
+.section11 h3 {
+  margin-top: 50px;
+}
+
+.pantallas1 {
   grid-template-rows: repeat(10, 1fr); 
   grid-template-columns: 1fr; 
   height: auto; 
 }
 
-.pantalla-item img {
-  width: 100%;
+.pantalla1-item img {
+  width: 90%;
   text-align: center;
   margin-left: 18px;
   margin: 0px 10px;
 }
 
-.pantalla-descrip, .imp-descrip {
+.pantalla1-descrip {
   color:#091934;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -598,31 +602,38 @@ main {
   text-align: justify;
 }
 
-.imp-descrip {
-  color: #E7F8FA;
+.pantalla1-descrip p {
+  margin-top: 30px;
 }
 
-.section11 h3 {
-  margin-top: 50px;
-}
-
-.pantallas-imp {
+.pantallas2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   grid-template-rows: repeat(3, auto);  
 }
 
-.pantallas-imp h3 {
+.pantalla2-item img {
+  width: 90%;
+  text-align: center;
+  margin-left: 18px;
+  margin: 0px 10px;
+}
+
+.pantalla2-descrip h3 {
   text-align: start;
+  margin-top: 0;
 }
 
-.pantalla-descrip p {
+.pantalla2-descrip {
+  color:#ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.pantalla2-descrip p {
   margin-top: 30px;
-}
-
-.pantallas {
-  grid-template-rows: repeat(10, auto); 
-  grid-template-columns: 1fr; 
 }
 
 footer {
@@ -634,8 +645,14 @@ footer {
   background-color: rgba(94,239,247,0.1)
 }
 
+.instructivo {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
 button {
-  background-color: #091934; 
+  background-color: #25A7BA; 
   border: none;
   color: white;
   padding: 12px 24px;
@@ -650,7 +667,7 @@ button {
 }
 
 button:hover {
-  background-color: #0a1d3e; 
+  background-color: #25A7BA; 
   transform: scale(1.05); 
 }
 
@@ -721,14 +738,9 @@ button a {
   margin: 50px 25px;
   border-radius: 10px;
   overflow: hidden;
-  
   justify-content: center;
   align-items: center;
-  
-  
 }
-
-
 
 .styled-table thead tr {
   background-color: #009879;
@@ -742,8 +754,6 @@ button a {
   line-height: 1.4;  
   vertical-align: top; 
 }
-
-
 
 .styled-table tbody tr:nth-of-type(even) {
   background-color: #f3f3f3;  

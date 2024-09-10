@@ -55,7 +55,7 @@
             <button class="reset-button" onclick="clearSearch()">Eliminar Filtros</button>
         </div>
         <div class="list">
-            <table class="styled-table">
+            <table class="styled-table1">
                 <thead>
                     <tr>
                         <th>Anunciante</th>
@@ -2289,7 +2289,7 @@
         function filterItems() {
     let input = document.getElementById('searchInput').value.toLowerCase();
     let rubroFilter = document.getElementById('rubroFilter').value.toLowerCase();
-    let table = document.querySelector('.styled-table tbody');
+    let table = document.querySelector('.styled-table1 tbody');
     let rows = table.getElementsByTagName('tr');
 
     for (let i = 0; i < rows.length; i++) {

@@ -105,21 +105,19 @@
         margin-top: 70px;
       }
 
-    .section6 h2 {
-        padding-bottom: 130px
-    }
-
-    .section6 .item {
-        display: flex;
-        justify-content: space-between
-    }
-
-    .section6 .item .col {
-        width: calc(50% - 20px)
-    }
-
-   
-
+      .cards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    
+      .card {
+        flex: 1 1 calc(33.33% - 40px);
+        margin: 20px;
+      }
+    
+      .card-content {
+        display: flex; /
+      }
     .section8 .content .txts,.section8 .content h4 {
         max-width: 75%;
         margin: 0 auto
@@ -178,57 +176,6 @@
         padding-top: 100px;
     }
 
-    .table-container {
-        width: 100%;
-        overflow-x: hidden; 
-        padding: 0; 
-        margin: 0; 
-    }
-
-    .table-container table {
-        width: 100%; 
-        table-layout: fixed; 
-        border-collapse: collapse;
-    }
-
-    .table-container th, .table-container td {
-        font-size: 10px;
-        padding: 6px;
-        text-align: left;
-        white-space: nowrap; 
-        overflow: hidden; 
-        text-overflow: ellipsis; 
-    }
-
-    .table-container th {
-        background-color: #091934;
-        color: #ffffff;
-    }
-
-    .table-container tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-
-    .table-container tr:hover {
-        background-color: #ddd;
-    }
-
-   
-    .table-container th:nth-child(1), .table-container td:nth-child(1),
-    .table-container th:nth-child(3), .table-container td:nth-child(3),
-    .table-container th:nth-child(4), .table-container td:nth-child(4) {
-        white-space: normal; 
-        overflow: visible; 
-    }
-
-    
-    .table-container th:nth-child(2), .table-container td:nth-child(2) {
-        width: 70px; 
-        white-space: nowrap; 
-        overflow: hidden; 
-        text-overflow: ellipsis; 
-    }
-
     .etapas {
         flex-direction: column;
         align-items: stretch;
@@ -247,48 +194,6 @@
 
     .etapa .nombre {
         font-size: 16px;
-    }
-
-    .section6 .item {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-        width: 100%; 
-    }
-
-    .section6 .item .bloque {
-        width: 100%; 
-        margin-top: -80px;
-        height: auto;
-        padding: 15px;
-    }
-
-    .section6 .item .bloque h4 {
-        margin-bottom: 10px;
-    }
-
-    .section6 .item .col:first-child {
-        order: 2;
-    }
-
-    .section6 .item .col:last-child {
-        order: 1;
-        margin-bottom: 20px;
-    }
-
-    .section6 h2 {
-        margin-bottom: 40px;
-        font-size: 20px;
-    }
-
-    .iframe-container {
-        width: 100%;
-    }
-
-    .section6 .iframe-table {
-        display: none;
     }
 
     .pantallas1 {
@@ -354,125 +259,6 @@
         text-align: justify;
         padding-bottom: 10px;
     }
-
-    .search-filter-container {
-        flex-direction: column;
-        align-items: center;
-      }
-    
-      .search-container,
-      .filter-container {
-        width: 300px;
-        margin-bottom: 10px;
-
-      }
-    
-      .reset-container {
-        max-width: 100%;
-      }
-
-      .styled-table {
-        width: 100%;
-        overflow-x: hidden; 
-        padding: 0; 
-        margin-left: 0px; 
-        text-align: left;
-    }
-
-    .styled-table th, .styled-table td {
-        font-size: 9px;
-        padding: 10px 12px;
-    }
-
-    .styled-table th:nth-child(1), .styled-table td:nth-child(1),
-    .styled-table th:nth-child(2), .styled-table td:nth-child(2),
-    .styled-table th:nth-child(3), .styled-table td:nth-child(3) {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: table-cell;
-       
-    }
-
-    .styled-table td:nth-child(1) {
-        max-width: 30px;
-        min-width: 30px;
-        
-    }
-    
-    .styled-table td:nth-child(2) {
-        max-width: 100px;
-    }
-
-    .styled-table td:nth-child(3) {
-        max-width: 80px;
-    }
-    
-    .styled-table th, .styled-table td {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    .styled-table th {
-        max-width: 30px;
-        min-width: 30px;
-        text-align: left;
-    }
-    .styled-table td {
-        line-height: 1.5; 
-    }
-
-    .styled-table td span {
-        display: block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 90%; 
-    font-size: 10px;
-    margin-bottom: 5px; 
-    }
-
-    .styled-table1 {
-        width: 100%;
-        overflow-x: hidden; 
-        padding: 0; 
-        margin-left: 0px; 
-        text-align: center;
-    }
-
-    .styled-table1 th, .styled-table1 td {
-        font-size: 12px;
-        padding: 10px 12px;
-        text-align: left;
-        width: 50px;
-
-    }
-   
-    .styled-table1 th {
-        text-align: center;
-    }
-
-    .styled-table1 th:nth-child(1), .styled-table1 td:nth-child(1),
-    .styled-table1 th:nth-child(2), .styled-table1 td:nth-child(2){
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: table-cell;
-       
-    }
-
-    .styled-table1 td:nth-child(1) {
-        max-width: 70px;
-        
-        
-    }
-    
-    .styled-table1 td:nth-child(2) {
-        max-width: 100px;
-        text-align: center;
-    }
-
-    
         
       }
 

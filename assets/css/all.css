@@ -519,10 +519,8 @@ main {
 .section6 .content {
   text-align: center;
   width: 100%;
-  
 }
 
-/* SECTION 6 */ 
 .cards-container {
   display: flex;
   flex-direction: column;
@@ -547,17 +545,17 @@ main {
   color: #0a1d3e;
   border-bottom: 2px solid #25A7BA;
   padding-bottom: 10px;
-  cursor: pointer; /* Indica que es clickeable */
+  cursor: pointer; 
 }
 
 .card-content {
-  display: none; /* Oculto por defecto en mobile */
+  display: none; 
   flex-direction: column;
   gap: 10px;
 }
 
 .card-content.expanded {
-  display: flex; /* Muestra cuando se expande */
+  display: flex; 
 }
 
 .activity {

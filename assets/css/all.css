@@ -329,101 +329,31 @@ header .proyecto .niv2 {
   max-width: 800px;
 }
 
-.timeline {
-  position: relative;
+.etapas-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 40px auto;
-  padding: 20px 0;
-  border-left: 4px solid #25A7BA;
-}
-
-.timeline-number {
-  background-color: #25A7BA;
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
-  z-index: 1;
-  transition: background-color 0.3s ease;
-}
-
-.timeline-item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 15px; 
-  border-radius: 8px;
-  width: 80%;
-  padding: 10px; 
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-}
-
-.timeline-icon {
-  position: absolute;
-  top: 50%; 
-  left: -55px;
-  background-color: #25A7BA;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px; 
-  font-weight: bold; 
-  color: #fff; 
-  transition: background-color 0.3s ease;
+  gap: 20px;
 }
 
 .etapa {
-  background-color: #25A7BA;
-  border-radius: 8px;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.etapa a {
-  width: 100%;
-  text-align: center;
-}
-
-.etapa .icono img {
-  width: 80px;
-  height: 80px;
-}
-
-.descrip-etapa {
-  text-align: center;
   background-color: #f3f3f3;
-  padding: 10px;
+  border: 1px solid #ddd;
   border-radius: 8px;
+  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  width: 100%;
-  margin-top: 5px;
 }
 
-.descrip-etapa h3 {
-  font-size: 22px;
+.etapa h3 {
+  font-size: 18px;
   margin: 0;
-  color: #091934;
+  color: #0a1d3e;
+  margin-bottom: 10px;
 }
 
-.descrip-etapa p {
+.etapa p {
   font-size: 14px;
   color: #555;
-  margin: 5px 0 0;
-}
-
-.timeline-item:hover .etapa {
-  transform: scale(1);
-  background-color: #1d8696; 
+  margin: 0;
 }
 
 /* SECTION 5 */

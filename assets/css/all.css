@@ -1,5 +1,4 @@
 /* ESTILOS GENERALES - MOBILE FIRST */
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono:wght@300;400;600&display=swap");* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -197,11 +196,8 @@ header .proyecto {
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
-  margin-top: 4px;
-  letter-spacing: .5px
-}
-
-header .proyecto .niv2 {
+  margin-top: 10px;
+  letter-spacing: .5px;
   font-family: "Roboto Mono",monospace;
   color: #5eeff7
 }

@@ -149,7 +149,7 @@
                                       <li>Banner Middle</li>
                                       <li>Banner Bottom</li>
                                       <li>Banner Bottom 4</li>
-                                      <li>Banner Botton 5</li>
+                                      <li>Banner Bottom 5</li>
                                       <li>Auspicios</li>
                                       <li>Logos (Solo Ole)</li>
                                       <li>Autoplay - Warp</li>
@@ -175,9 +175,9 @@
           </section>
           <section class="section6 section" id="m02">
             <div class="content">
-                <h2 class="pbl align-center">Selección de audiencias por rubro</h2>
+                <h2 class="pbl align-center">Selección de Audiencias por rubro</h2>
                 <div class="text-content1">
-                    <p class="text-content">Toda campaña de display o Reach Media (excepto Preroll)<br> puede mejorar su Performance con Audiencia por Rubro Económico.</p>
+                    <p class="text-content">Toda campaña de display o Reach Media (excepto Preroll)<br> puede mejorar su performance con Audiencia por Rubro Económico.</p>
                     <button class="anunciantes"><a href="/list-clarin.html" target="_blank">Anunciantes</a></button>
                 </div>
                 <div class="cards-container">
@@ -634,7 +634,9 @@
               <div class="content">
                   <h2 class="pbl align-center wow animate__animated animate__fadeIn">Proceso de carga en SGP</h2>
                   <div class="pantallas1">
-                        <div class="pantalla1-item"><img src="/assets/images/p1.png"></div>
+                        <div class="pantalla1-item">
+                            <img src="/assets/images/p1.png" alt="Imagen del sistema" id="myImage" class="expandable-image">
+                        </div>
                         <div class="pantalla1-descrip">
                             <h3>1- Acceder al Sistema de Gestión de Publicidad Gráfica y Digital:</h3>
                             <p>Inicia sesión en la plataforma para comenzar el proceso de carga. Asegurate de estar autenticado correctamente para tener acceso a todas las funcionalidades necesarias.</p>
@@ -854,6 +856,22 @@
                 cardContent.classList.toggle('expanded');
             });
         });
+
+        function openModal(newImageSrc) {
+  var modal = document.getElementById("imageModal");
+  var expandedImg = document.getElementById("expandedImage");
+
+  // Asignamos la nueva imagen al modal
+  expandedImg.src = newImageSrc;
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  var modal = document.getElementById("imageModal");
+  modal.style.display = "none";
+}
+
+
        </script>
     </body>
 </html>

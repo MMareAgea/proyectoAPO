@@ -11,7 +11,7 @@ body {
   overflow-x: hidden
 }
 
-html,body {
+html, body {
   margin: 0;
   padding: 0
 }
@@ -54,7 +54,7 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 34px;
   line-height: 42px;
   font-weight: 700
 }
@@ -185,18 +185,18 @@ main {
 header .logo {
   background-image: url("../images/logo-clarin-blanco.png");
   background-size: contain;
-  width: 160px;
-  height: 60px;
+  width: 140px;
+  height: 40px;
   background-repeat: no-repeat;
   background-position: left center;
   margin-right: 30px
 }
 
 header .proyecto {
-  font-size: 14px;
+  font-size: 10px;
   line-height: 16px;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 12px;
   letter-spacing: .5px;
   font-family: "Roboto Mono",monospace;
   color: #5eeff7;
@@ -259,7 +259,7 @@ header .proyecto {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  bottom: 40px;
+  bottom: 25px;
 }
 
 .portada .content .flecha a {
@@ -269,16 +269,15 @@ header .proyecto {
 }
 
 .portada .content h1 {
-  margin-top: 20px;
-  font-size: 40px;
+  margin-top: 8px;
+  font-size: 35px;
 }
 
 .portada .content .txt {
   max-width: 510px;
   margin-top: 30px;
   font-size: 16px;
-  line-height: 30px;
-  letter-spacing: .5px
+  line-height: 25px;
 }
 
 .copete {
@@ -292,7 +291,6 @@ header .proyecto {
 }
 
 /* SECTION 2 */
-
 .section2 {
   padding-top: 60px;
   background: #61d5db;
@@ -312,6 +310,12 @@ header .proyecto {
   margin: 0 auto;
 }
 
+.section2 .content .txt2 {
+  font-size: 14px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .section2 .content .image {
   width: 100%;
   max-width: 800px;
@@ -324,6 +328,10 @@ header .proyecto {
 }
 
 /* SECTION 4 */ 
+.section4 .copete {
+  padding-bottom: 8px;
+}
+
 .section4 .content {
   text-align: center;
   margin: 40px auto;
@@ -355,10 +363,10 @@ header .proyecto {
   font-size: 14px;
   color: #555;
   margin: 0;
+  line-height: 20px;
 }
 
 /* SECTION 5 */
-
 .section5 {
   background-color: #E7F8FA
 }
@@ -372,7 +380,7 @@ header .proyecto {
 }
 
 .section5 .bloques .tip {
-  color: #25A7BA
+  color: #25A7BA;
 }
 
 .section5 .bloques .bloque {
@@ -390,13 +398,14 @@ header .proyecto {
   background-color: #25A7BA
 }
 
+
 .section5 .bloques .bloque.bloque-blanco {
   background-color: white
 }
 
 .section5 .bloques .bloque .tit {
   font-size: 22px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 .section5 .bloques .bloque .col {
@@ -436,7 +445,6 @@ header .proyecto {
 
 .section5 .bloques .dosbloques .bloque2 .logo {
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .section5 .bloques .dosbloques .bloque2 .logo img {
@@ -516,7 +524,6 @@ header .proyecto {
 }
 
 /* SECTION 6 */
-
 .section6 .content {
   text-align: center;
   width: 100%;
@@ -579,7 +586,6 @@ header .proyecto {
 }
 
 /* SECTION 8 */
-
 .section8 {
   text-align: center;
 }
@@ -640,7 +646,6 @@ header .proyecto {
 }
 
 /* SECTION 11 */
-
 .section11 {
   text-align: center;
 }
@@ -750,7 +755,6 @@ button a {
 }
 
 /* FOOTER */
-
 footer {
   color:#0a1d3e;
   text-align: center;

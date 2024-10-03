@@ -35,18 +35,36 @@
         padding: 80px 40px
     }
 
-    .copete {
+    header .proyecto {
+        font-size: 16px;
+      }
+
+    .portada .copete {
         font-size: 20px;
+        padding-bottom: 10px;
     }
 
     .portada .content h1 {
         font-size: 60px;
     } 
+
+    .portada .content .txt {
+        font-size: 20px;
+        line-height: 35px;
+    }
     
+    .portada .content .flecha {
+        bottom: 50px;
+    }
+
     .section2 .content .txt {
         font-size: 40px;
         line-height: 45px;
         max-width: 700px
+    }
+
+    .section4 .copete {
+        font-size: 20px;
     }
 
     .section5 .content .bloques {

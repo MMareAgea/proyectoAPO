@@ -63,8 +63,23 @@
         max-width: 700px
     }
 
+    .section4 .content {
+        max-width: 70%;
+    }
+
     .section4 .copete {
         font-size: 20px;
+    }
+
+    .etapas-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .etapa {
+        flex: 1;
+        max-width: 23%; 
+        margin: 0;
     }
 
     .section5 .content .bloques {

@@ -330,6 +330,7 @@ header .proyecto {
 /* SECTION 4 */ 
 .section4 .copete {
   padding-bottom: 8px;
+  font-size: 18px;
 }
 
 .section4 .content {
@@ -345,6 +346,8 @@ header .proyecto {
 }
 
 .etapa {
+  display: flex;
+  align-items: flex-start;
   background-color: #f3f3f3;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -357,6 +360,7 @@ header .proyecto {
   margin: 0;
   color: #0a1d3e;
   margin-bottom: 10px;
+  line-height: 24px;
 }
 
 .etapa p {
@@ -364,6 +368,12 @@ header .proyecto {
   color: #555;
   margin: 0;
   line-height: 20px;
+}
+
+.number {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
 }
 
 /* SECTION 5 */
